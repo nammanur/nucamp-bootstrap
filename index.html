@@ -7,11 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    
 
 
     <title>NuCamp: A Better Way To Camp</title>
@@ -46,7 +49,7 @@
                 <div class="modal-body" >
                     <div class="container-fluid">
                         <form>
-                            <div class="row">
+                            <div class="row py-2">
                                 <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
                                 <div class="col">
                                     <select name="numCampers" id="numCampers" class="col form-control">
@@ -60,16 +63,16 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row py-2">
                                 <label for="date" class="col-sm-6 col-form-label">Date</label>
                                 <div class="col">
                                     <input type="date" name="date" id="date" placeholder="mm/dd/yyyy"
                                         class="col form-control">
                                 </div>
                             </div>
-                            <div class="row form-group">
+                            <div class="row form-group py-2">
                                 <label for="campsitetype" class="col-sm-6 col-form-label">Campsite Type</label>
-                                <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
+                                <div class="col-2 btn-group btn-group-toggle" id="campsitetype" data-toggle="buttons">
                                     <label class="btn btn-success active">
                                         <input type="radio" name="siteType" id="siteTent" value="tent" autocomplete="off" checked> Active
                                       </label>
@@ -203,6 +206,9 @@
                         <span class="carousel-control-next-icon"></span>
                         <span class="sr-only">Next</span>
                     </a>
+                    <button class="btn btn-danger btn-sm" id="carouselButton">
+                        <i class="fa fa-pause"></i>
+                    </button>                        
                 </div>
             </div>
         </div>
@@ -298,15 +304,15 @@
         </div>
     </footer>
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
 
-    <script>
-        $(function(){
-            $('[data-toggle="tooltip"]').tooltip()
-        })
     </script>
+
 
 </body>
 
