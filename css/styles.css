@@ -53,3 +53,17 @@ site-footer {
   right: 0;
   bottom: 0;
   z-index: 100; }
+
+.loginModal {
+  position: absolute; }
+
+.reserveModal {
+  position: absolute; }
+
+#loginModal div div .modal-header {
+  background-color: #901CAD;
+  color: white; }
+
+#reserveModal div div .modal-header {
+  background-color: #17A2B8;
+  color: white; }
